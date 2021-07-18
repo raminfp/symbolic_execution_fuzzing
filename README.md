@@ -105,3 +105,21 @@ $ klee bn.bc
 
 ![Crashed](https://github.com/raminfp/symbolic_execution_fuzzing/blob/master/img/KLEE.png)
 
+5- Details
+
+```bash
+klee@500746a23210:~/tiny-bignum-c$ cat klee-out-0/test000001.ptr.err
+Error: memory error: out of bound pointer
+File: bn.c
+Line: 157
+assembly.ll line: 521
+State: 2
+Stack: 
+        #000000521 in bignum_to_string (n=93858042189952, str=93858042462208, nbytes=8192) at bn.c:157
+        #100002836 in main () at bn.c:703
+Info: 
+        address: 93858042470400
+        next: object at 22510123060032 of size 1536
+                MO40[1536] (no allocation info)
+
+```

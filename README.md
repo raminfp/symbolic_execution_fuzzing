@@ -1,4 +1,4 @@
-# Symbolic Execution Fuzzing With KLLE
+# Symbolic Execution Fuzzing With KLEE
 
 
 #### What is Symbolic Execution?

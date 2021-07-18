@@ -1,0 +1,3 @@
+KLEE: WARNING: undefined reference to function: __isoc99_sscanf
+KLEE: WARNING: undefined reference to function: sprintf
+KLEE: WARNING ONCE: calling external: sprintf(93858042462208, 93858042024568, 0) at bn.c:139 7

@@ -1,0 +1,4 @@
+KLEE: Using STP solver backend
+KLEE: ERROR: bn.c:157: memory error: out of bound pointer
+KLEE: NOTE: now ignoring this error at this location
+KLEE: halting execution, dumping remaining states
